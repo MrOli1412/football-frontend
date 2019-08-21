@@ -1,0 +1,10 @@
+{
+  "/club": {
+    "target": "http://localhost:3000",
+    "secure": false
+  },
+  "/players": {
+    "target": "http://localhost:3000",
+    "secure": false
+  }
+}

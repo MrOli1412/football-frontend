@@ -1,0 +1,70 @@
+{
+    "players": [
+      {
+      "id": 1,
+      "lastName": "Banas",
+      "firstName": "Tomasz",
+      "dateOfBirth": "12-12-1994",
+      "permissionDate": "Amator",
+      "periodOfTheContract": "-",
+      "lastClub": "-",
+      "transferType": "Bezterminowy"
+    },
+      {
+        "id": 2,
+        "lastName": "Robert",
+        "firstName": "Em",
+        "dateOfBirth": "12-12-1994",
+        "permissionDate": "Pro",
+        "periodOfTheContract": "-",
+        "lastClub": "Lks CHUWDU",
+        "transferType": "Wychowanek"
+      }],
+  "matches": [
+    {
+      "id": 1,
+      "shirtColor": "Czrne",
+      "date": "12-12-2019",
+      "players": [{
+        "id": 2,
+        "lastName": "Robert",
+        "firstName": "Em"
+      },
+        {
+          "id": 1,
+          "lastName": "Banas",
+          "firstName": "Tomasz"
+        }
+      ]
+    }],
+
+  "statistics": {
+    "id": 1,
+    "lastName": "Banas",
+    "firstName": "Tomasz",
+    "statistic": {
+      "id": 1,
+      "goals": 2,
+      "assists": 0,
+      "redCards": 3,
+      "yellowCards": 1,
+      "matchCount": 15
+    }
+  },
+
+  "club":{
+    "id": 1,
+    "name": "Lks Pawłów",
+    "teams": [
+      {
+      "id": 1,
+      "name": "Seniorzy"
+    },
+      {
+        "id": 2,
+        "name": "Juniorzy"
+      }
+    ]
+  }
+
+}

@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>{{club.name}}</title>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+      <div class="container"><a class="navbar-brand" [routerLink]="''">{{club.name}}</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse"
+             id="navcol-1">
+          <ul class="nav navbar-nav ml-auto" >
+            <li class="nav-item" role="presentation" *ngFor="let team of club.teams" ><a class="nav-link"  [routerLink]="'/team/'+team.id">{{team.name}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
