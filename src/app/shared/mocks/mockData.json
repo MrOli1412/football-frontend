@@ -1,43 +1,67 @@
 {
-    "players": [
-      {
-      "id": 1,
-      "lastName": "Banas",
+  "players": [
+    {
+      "lastName": "BanasGGG",
       "firstName": "Tomasz",
-      "dateOfBirth": "12-12-1994",
+      "dateOfBirth": "2019-08-06T22:00:00.000Z",
       "permissionDate": "Amator",
-      "periodOfTheContract": "-",
-      "lastClub": "-",
-      "transferType": "Bezterminowy"
+      "id": 1
     },
-      {
-        "id": 2,
-        "lastName": "Robert",
-        "firstName": "Em",
-        "dateOfBirth": "12-12-1994",
-        "permissionDate": "Pro",
-        "periodOfTheContract": "-",
-        "lastClub": "Lks CHUWDU",
-        "transferType": "Wychowanek"
-      }],
+    {
+      "lastName": "RobertFFF",
+      "firstName": "Em",
+      "dateOfBirth": "2019-08-06T22:00:00.000Z",
+      "permissionDate": "Pro",
+      "id": 2
+    },
+    {
+      "lastName": "asd",
+      "firstName": "asd",
+      "dateOfBirth": "2019-08-06T22:00:00.000Z",
+      "permissionDate": "2019-08-12T22:00:00.000Z",
+      "id": 3
+    },
+    {
+      "lastName": "asd",
+      "firstName": "asd",
+      "dateOfBirth": "2019-08-06T22:00:00.000Z",
+      "permissionDate": "2019-08-12T22:00:00.000Z",
+      "id": 4
+    },
+    {
+      "lastName": "Meee",
+      "firstName": "Tomasz",
+      "dateOfBirth": "2019-08-06T22:00:00.000Z",
+      "permissionDate": "Amator",
+      "id": 5
+    },
+    {
+      "lastName": "BanasGG",
+      "firstName": "Tomasz",
+      "dateOfBirth": "2019-08-06T22:00:00.000Z",
+      "permissionDate": "Amator",
+      "id": 6
+    }
+  ],
   "matches": [
     {
       "id": 1,
       "shirtColor": "Czrne",
       "date": "12-12-2019",
-      "players": [{
-        "id": 2,
-        "lastName": "Robert",
-        "firstName": "Em"
-      },
+      "players": [
+        {
+          "id": 2,
+          "lastName": "Robert",
+          "firstName": "Em"
+        },
         {
           "id": 1,
           "lastName": "Banas",
           "firstName": "Tomasz"
         }
       ]
-    }],
-
+    }
+  ],
   "statistics": {
     "id": 1,
     "lastName": "Banas",
@@ -51,20 +75,18 @@
       "matchCount": 15
     }
   },
-
-  "club":{
+  "club": {
     "id": 1,
     "name": "Lks Pawłów",
     "teams": [
       {
-      "id": 1,
-      "name": "Seniorzy"
-    },
+        "id": 1,
+        "name": "Seniorzy"
+      },
       {
         "id": 2,
         "name": "Juniorzy"
       }
     ]
   }
-
 }

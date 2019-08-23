@@ -6,5 +6,9 @@
   "/players": {
     "target": "http://localhost:3000",
     "secure": false
+  },
+  "/matches": {
+    "target": "http://localhost:3000",
+    "secure": false
   }
 }

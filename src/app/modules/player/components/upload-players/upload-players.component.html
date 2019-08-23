@@ -1,0 +1,19 @@
+<mat-dialog-content>
+  <div class="form-group">
+    <form [formGroup]="uploadPlayers" (ngSubmit)="submit()">
+      <div class="form-row">
+        <button mat-flat-button color="primary" (click)="pdfFileInput.click()">Wybierz plik</button>
+        <input hidden type="file" #pdfFileInput (change)="selectFile($event.target.files)" formControlName="pdf"/>
+      </div>
+
+      <div class="form-row">
+        <span *ngIf="!getFile().invalid">{{getFile().value}}</span>
+      </div>
+      <div class="form-row">
+        <button mat-flat-button color="primary" type="submit" class="btn btn-primary"
+                [disabled]="uploadPlayers.invalid">Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</mat-dialog-content>

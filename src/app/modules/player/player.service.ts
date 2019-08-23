@@ -13,4 +13,17 @@ export class PlayerService {
   getAllPlayersFromTeam(id:number):Observable<Player[]>{
     return this.http.get<Player[]>(this.url+"/players");
   }
+
+  uploadPlayers(file:File):Observable<Player[]>{
+    return this.http.post<Player[]>(this.url+"/upload",file);
+  }
+
+  savePlayer(player:Player):Observable<Player>{
+    return this.http.post<Player>(this.url+"/players",player);
+  }
+
+  updatePlayer(player:Player):Observable<Player>{
+    return this.http.put<Player>(this.url+'/players/'+player.id,player);
+  }
+
 }
