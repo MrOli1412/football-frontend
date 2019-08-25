@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule,routingComponents} from './modules/app-routing.module';
@@ -8,6 +8,7 @@ import { PlayerListComponent } from './modules/player/components/player-list/pla
 import { TeamListComponent } from './modules/team/components/team-list/team-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
+  MAT_DATE_LOCALE,
   MAT_DIALOG_DATA,
   MAT_DIALOG_DEFAULT_OPTIONS,
   MatButtonModule, MatCheckboxModule, MatDatepickerModule,
@@ -72,6 +73,7 @@ import { UploadPlayersComponent } from './modules/player/components/upload-playe
   ],
   providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}},
     {provide: MAT_DIALOG_DATA,useValue: {}},
+    {provide: MAT_DATE_LOCALE, useValue: 'pl-PL'},
   ],
   entryComponents:[PlayerDetailComponent,UploadPlayersComponent],
   bootstrap: [AppComponent]

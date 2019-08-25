@@ -44,7 +44,10 @@ export class PlayerListComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
-    });
+    },
+      error => {},
+      ()=>{console.log(this.players)}
+    );
   }
 
   uploadFile() {
